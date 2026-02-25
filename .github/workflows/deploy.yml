@@ -18,12 +18,11 @@ jobs:
       - name: Authenticate to Salesforce
         run: |
           echo "${{ secrets.SF_JWT_KEY }}" > server.key
-          sfdx auth:jwt:grant \
+          sfdx force:auth:jwt:grant \
             --clientid ${{ secrets.SF_CLIENT_ID }} \
             --jwtkeyfile server.key \
             --username ${{ secrets.SF_USERNAME }} \
-            --instanceurl https://login.salesforce.com \
-            --setdefaultusername
+            --instanceurl https://login.salesforce.com
 
       - name: Deploy to UAT
         run: sfdx force:source:deploy -p force-app -u ${{ secrets.SF_USERNAME }}
