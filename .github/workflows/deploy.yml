@@ -26,4 +26,4 @@ jobs:
             --setdefaultusername
 
       - name: Deploy to UAT
-        run: sfdx force:source:deploy -p force-app
+        run: sfdx force:source:deploy -p force-app -u ${{ secrets.SF_USERNAME }}
