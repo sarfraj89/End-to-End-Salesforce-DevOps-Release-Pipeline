@@ -25,4 +25,4 @@ jobs:
             --instanceurl https://login.salesforce.com
 
       - name: Deploy to UAT
-        run: sfdx force:source:deploy -p End-to-End-Salesforce-DevOps-Release-Pipeline/force-app -u ${{ secrets.SF_USERNAME }}
+        run: sfdx force:source:deploy -p force-app -u ${{ secrets.SF_USERNAME }}
