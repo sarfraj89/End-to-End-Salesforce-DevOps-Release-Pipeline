@@ -6,9 +6,7 @@ An end-to-end Salesforce DevOps CI/CD pipeline using **Salesforce DX (SFDX)**, *
 
 ## 🏗️ Architecture
 
-```
-![Salesforce DevOps Architecture](architecture/Pasted%20image.png)
-```
+![architecture diagram](https://github.com/sarfraj89/End-to-End-Salesforce-DevOps-Release-Pipeline/blob/main/architecture/Pasted%20image.png)
 
 ---
 
